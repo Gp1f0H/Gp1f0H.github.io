@@ -1,0 +1,19 @@
+.animate__hand-start {
+    transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%; /* IE 9 */
+    -webkit-transform-origin: 100% 100%; /* Safari and Chrome */
+    -moz-transform-origin: 100% 100%; /* Firefox */
+    -o-transform-origin: 100% 100%;
+    
+    animation-duration: 2s;
+    animation-name: HandIn;
+    animation-timing-function: ease-out; /* For a steady rate loop */
+    animation-delay: 0s;
+}
+.scroll-section__wrapper {
+    background-color: #1e1e1e;
+}
+@keyframes HandIn {
+   from { transform: translateY(1500px); }
+   to   { transform: translateY(0px); }
+}
